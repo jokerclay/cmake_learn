@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11   -g -o CMakeFiles/test_exe.dir/main.cpp.o -c /home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/main.cpp",
+  "file": "/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/main.cpp"
+},
+{
+  "directory": "/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/build/say_hello",
+  "command": "/bin/x86_64-linux-gnu-g++-11 -Dsay_hello_EXPORTS  -g -fPIC -o CMakeFiles/say_hello.dir/src/say_hello/hello.cpp.o -c /home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/say_hello/src/say_hello/hello.cpp",
+  "file": "/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/say_hello/src/say_hello/hello.cpp"
+}
+]

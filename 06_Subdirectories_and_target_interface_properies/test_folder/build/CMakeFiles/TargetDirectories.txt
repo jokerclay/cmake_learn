@@ -1,0 +1,6 @@
+/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/build/CMakeFiles/test_exe.dir
+/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/build/CMakeFiles/edit_cache.dir
+/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/build/CMakeFiles/rebuild_cache.dir
+/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/build/say_hello/CMakeFiles/say_hello.dir
+/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/build/say_hello/CMakeFiles/edit_cache.dir
+/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/build/say_hello/CMakeFiles/rebuild_cache.dir

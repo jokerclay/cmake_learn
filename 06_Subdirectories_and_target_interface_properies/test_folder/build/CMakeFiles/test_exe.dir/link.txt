@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-11 -g CMakeFiles/test_exe.dir/main.cpp.o -o test_exe  -Wl,-rpath,/home/clay/Documents/c++/cmake/06_Subdirectories_and_target_interface_properies/test_folder/build/say_hello say_hello/libsay_hello.so 
