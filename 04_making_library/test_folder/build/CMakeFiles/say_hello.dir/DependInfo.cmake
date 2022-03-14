@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/clay/Documents/c++/cmake/04_making_library/test_folder/main.cpp" "CMakeFiles/test_exe.dir/main.cpp.o" "gcc" "CMakeFiles/test_exe.dir/main.cpp.o.d"
+  "/home/clay/Documents/c++/cmake/04_making_library/test_folder/hello.cpp" "CMakeFiles/say_hello.dir/hello.cpp.o" "gcc" "CMakeFiles/say_hello.dir/hello.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles/say_hello.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

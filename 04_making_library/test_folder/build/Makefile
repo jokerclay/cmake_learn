@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder
+CMAKE_SOURCE_DIR = /home/clay/Documents/c++/cmake/04_making_library/test_folder
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build
+CMAKE_BINARY_DIR = /home/clay/Documents/c++/cmake/04_making_library/test_folder/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build/CMakeFiles /home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles /home/clay/Documents/c++/cmake/04_making_library/test_folder/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named say_hello
+
+# Build rule for target.
+say_hello: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 say_hello
+.PHONY : say_hello
+
+# fast build rule for target.
+say_hello/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/say_hello.dir/build.make CMakeFiles/say_hello.dir/build
+.PHONY : say_hello/fast
+
+#=============================================================================
 # Target rules for targets named test_exe
 
 # Build rule for target.
@@ -128,6 +141,30 @@ test_exe: cmake_check_build_system
 test_exe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exe.dir/build.make CMakeFiles/test_exe.dir/build
 .PHONY : test_exe/fast
+
+hello.o: hello.cpp.o
+.PHONY : hello.o
+
+# target to build an object file
+hello.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/say_hello.dir/build.make CMakeFiles/say_hello.dir/hello.cpp.o
+.PHONY : hello.cpp.o
+
+hello.i: hello.cpp.i
+.PHONY : hello.i
+
+# target to preprocess a source file
+hello.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/say_hello.dir/build.make CMakeFiles/say_hello.dir/hello.cpp.i
+.PHONY : hello.cpp.i
+
+hello.s: hello.cpp.s
+.PHONY : hello.s
+
+# target to generate assembly for a file
+hello.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/say_hello.dir/build.make CMakeFiles/say_hello.dir/hello.cpp.s
+.PHONY : hello.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -161,7 +198,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... say_hello"
 	@echo "... test_exe"
+	@echo "... hello.o"
+	@echo "... hello.i"
+	@echo "... hello.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

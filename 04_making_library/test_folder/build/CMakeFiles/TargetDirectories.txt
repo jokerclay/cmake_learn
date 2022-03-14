@@ -1,3 +1,4 @@
-/home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build/CMakeFiles/test_exe.dir
-/home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build/CMakeFiles/edit_cache.dir
-/home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build/CMakeFiles/rebuild_cache.dir
+/home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles/say_hello.dir
+/home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles/test_exe.dir
+/home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles/edit_cache.dir
+/home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles/rebuild_cache.dir

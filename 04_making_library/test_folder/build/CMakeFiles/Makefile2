@@ -54,15 +54,16 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder
+CMAKE_SOURCE_DIR = /home/clay/Documents/c++/cmake/04_making_library/test_folder
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build
+CMAKE_BINARY_DIR = /home/clay/Documents/c++/cmake/04_making_library/test_folder/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/say_hello.dir/all
 all: CMakeFiles/test_exe.dir/all
 .PHONY : all
 
@@ -71,24 +72,51 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/say_hello.dir/clean
 clean: CMakeFiles/test_exe.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/say_hello.dir
+
+# All Build rule for target.
+CMakeFiles/say_hello.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/say_hello.dir/build.make CMakeFiles/say_hello.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/say_hello.dir/build.make CMakeFiles/say_hello.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles --progress-num=1,2 "Built target say_hello"
+.PHONY : CMakeFiles/say_hello.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/say_hello.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/say_hello.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles 0
+.PHONY : CMakeFiles/say_hello.dir/rule
+
+# Convenience name for target.
+say_hello: CMakeFiles/say_hello.dir/rule
+.PHONY : say_hello
+
+# clean rule for target.
+CMakeFiles/say_hello.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/say_hello.dir/build.make CMakeFiles/say_hello.dir/clean
+.PHONY : CMakeFiles/say_hello.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/test_exe.dir
 
 # All Build rule for target.
-CMakeFiles/test_exe.dir/all:
+CMakeFiles/test_exe.dir/all: CMakeFiles/say_hello.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exe.dir/build.make CMakeFiles/test_exe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_exe.dir/build.make CMakeFiles/test_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build/CMakeFiles --progress-num=1,2 "Built target test_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles --progress-num=3,4 "Built target test_exe"
 .PHONY : CMakeFiles/test_exe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_exe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/clay/Documents/c++/cmake/03_hello_world_executable/test_folder/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clay/Documents/c++/cmake/04_making_library/test_folder/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_exe.dir/rule
 
 # Convenience name for target.
