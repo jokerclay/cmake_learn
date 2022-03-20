@@ -1,0 +1,3 @@
+/home/clay/Documents/c++/cmake/07_scripting_basic/test_folder/build/CMakeFiles/test_exe.dir
+/home/clay/Documents/c++/cmake/07_scripting_basic/test_folder/build/CMakeFiles/edit_cache.dir
+/home/clay/Documents/c++/cmake/07_scripting_basic/test_folder/build/CMakeFiles/rebuild_cache.dir
