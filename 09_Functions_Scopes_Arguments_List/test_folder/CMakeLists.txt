@@ -8,16 +8,17 @@ project(Myproject VERSION 1.0.0)
 # add_executable(可执行文件名 文件源(相对于根目录即工程目录下))
 add_executable(test_exe main.cpp)
 
-
 set_property(
     GLOBAL
     PROPERTY FOO
     1
     2
     3
-    4
     )
+
 get_cmake_property(foo_value FOO)
-message(STATUS "foo value is: ${foo_value}" )
+message(STATUS "value of foo${foo_value}" )
+
+
 
 
